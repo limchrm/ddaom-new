@@ -1,0 +1,26 @@
+{
+	"manifest_version": 2,
+
+	"name": "따옴",
+	"description": "삶에 작은 힘이 되는 말들, 새 탭을 열 때마다 랜덤으로 보여 줍니다.",
+	"version": "1.1.2",
+	"chrome_url_overrides" : {
+		"newtab": "index.html"
+	},
+	"icons": {
+		"128": "img/ic_quoty128.png",
+		"16": "img/ic_quoty16.png",
+		"48": "img/ic_quoty48.png"
+	},
+	"content_scripts": [{
+		"matches": ["http://www.google.com/*"],
+		"js": ["js/angular.min.js"]
+	}],
+	"permissions": [
+		"http://*/*",
+		"https://*/*",
+		"chrome://favicon/",
+		"storage"
+	],
+	"content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'"
+}
