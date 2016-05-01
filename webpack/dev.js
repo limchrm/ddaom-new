@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ROOT = `${__dirname}/..`;
 
 module.exports = {
@@ -20,6 +21,9 @@ module.exports = {
     new ExtractTextPlugin('styles.css'),
     new HtmlWebpackPlugin({
       template: `${ROOT}/src/index.html`,
-    })
+    }),
+    new CopyWebpackPlugin([
+      { from: `${ROOT}/src/img`, to: 'img' },
+    ]),
   ],
 };
