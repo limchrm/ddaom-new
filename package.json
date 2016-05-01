@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "copy:image": "mkdir -p dist && cp -r src/img dist/",
     "build": "npm run build:prod",
-    "build:dev": "webpack --config webpack/dev",
-    "build:prod": "webpack --config webpack/prod"
+    "build:dev": "npm run copy:image && webpack --config webpack/dev",
+    "build:prod": "npm run copy:image && webpack --config webpack/prod"
   },
   "repository": {
     "type": "git",
