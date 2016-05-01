@@ -1,3 +1,4 @@
+<img src="preview.jpg" style="width: 100%">
 # 따옴 DDAOM
 
 삶에 작은 힘이 되는 말들, 새 탭을 열 때마다 랜덤으로 보여 줍니다.
