@@ -4,17 +4,10 @@
 	<meta charset="utf-8">
 	<title>따옴</title>
 	<link rel="icon" href="img/favicon.png">
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
-	<script src="js/bootstrap-colorpicker-module.js"></script>
-	<script src="js/app.js"></script>
-	<script src="js/setting.js"></script>
-	<script src="js/ga_track.js"></script>
-	<link rel="stylesheet" type="text/css" href="colorpicker.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body ng-app="myApp" class="{{user.theme}} {{user.align}}"  ng-controller="settingCtrl">
-	
+
 	<header ng-controller='TimeCtrl' class="animated fadeInDown">
 		<p ng-show="user.time" class="time" style="color:{{time.color}};"> {{ clock | date:'HH'}}<span>:</span>{{ clock | date:'mm'}}</p>
 		<p ng-show="user.date" class="date" style="color:{{date.color}};">{{date | date:'MM'+'. '+'dd'+'. '+'EEE'}}{{dateValue | date:'fullDate'}}</p>
@@ -39,7 +32,7 @@
 			<!-- THEME: CUSTOM -->
 		</div>
 	</section>
-	
+
 	<!-- SETTING BOX -->
 	<section id="setting" ng-class="{'open':open}">
 		<h3>테마</h3>
@@ -61,7 +54,7 @@
 		<!-- CUSTOM THEME PREFERENCE -->
 		<h3>정렬</h3>
 		<img src="img/ic_align_left.svg" ng-click="user.align='left'" class="align_left">
-		<img src="img/ic_align_center.svg" ng-click="user.align=''" class="align_center">		
+		<img src="img/ic_align_center.svg" ng-click="user.align=''" class="align_center">
 		<label for="ch_time">시간</label>
 		<input type="checkbox" ng-model="user.time" id="ch_time">
 		<label for="ch_date">날짜</label>
@@ -74,7 +67,7 @@
 
 	<footer>
 		<a class="btn btn_feedback track" ng-click="feedback='open'"><img src="img/ic_feedback.svg"><span>피드백</span></a>
-		<a class="btn btn_suggest" href="https://docgoogles..com/spreadsheets/d/1HKw5-B0kdBgnm8kggXo0_GXqsiyY4YZ6QTayojQBRLI/edit?usp=sharing" target="_blank"><img src="img/ic_suggest.svg"><span>명언 제보</span></a>
+		<a class="btn btn_suggest" href="https://docs.google.com/spreadsheets/d/1HKw5-B0kdBgnm8kggXo0_GXqsiyY4YZ6QTayojQBRLI/edit?usp=sharing" target="_blank"><img src="img/ic_suggest.svg"><span>명언 제보</span></a>
 		<a class="btn btn_setting" ng-click="open=true"><img src="img/ic_setting.svg"></a>
 		<p>© 2015 CHRM<a class="profile" href="http://fb.me/limchrm" target="_blank">limchrm</a></p>
 	</footer>
