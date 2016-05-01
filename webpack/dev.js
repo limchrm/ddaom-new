@@ -26,4 +26,7 @@ module.exports = {
       { from: `${ROOT}/src/img`, to: 'img' },
     ]),
   ],
+  devServer: {
+    outputPath: `${ROOT}/dist`,
+  },
 };
