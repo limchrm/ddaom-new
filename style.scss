@@ -114,7 +114,7 @@ header, footer {
 	position: fixed;
 	z-index: 11;
 	color: white;
-	font-family: "Spoqa Han Sans", Apple SD Gothic Neo, sans-serif;
+	font-family: 'Spoqa Han Sans', "Source Sans Pro", Apple SD Gothic Neo, 'Open Sans', Dotum, Arial, sans-serif;
 	text-align: center;
 	transition: .2s all ease;
 }
@@ -228,7 +228,7 @@ footer {
 	z-index: 20;
 	@include f-center;
 	color: white;
-	font-family: "Spoqa Han Sans", Apple SD Gothic Neo, sans-serif;
+		font-family: 'Spoqa Han Sans', "Source Sans Pro", Apple SD Gothic Neo, 'Open Sans', Dotum, Arial, sans-serif;
 	letter-spacing: -.05em;
 	transition: .35s all ease-in-out;
 	* { transition: .2s all ease; }
@@ -279,7 +279,7 @@ footer {
 		padding: 8px 32px 8px 8px;
 		margin: 0 2em 0 .5em;
 		color: white;
-		font-family: "Spoqa Han Sans", Apple SD Gothic Neo, sans-serif;
+			font-family: 'Spoqa Han Sans', "Source Sans Pro", Apple SD Gothic Neo, 'Open Sans', Dotum, Arial, sans-serif;
 		font-size: 18px;
 		letter-spacing: -.05em;
 		border: 2px solid;
@@ -318,7 +318,7 @@ h5 {
 	z-index: 50;
 	border-radius: 2em;
 	color: white;
-	font: normal 14px "Spoqa Han Sans", Apple SD Gothic Neo, sans-serif;
+		font-family: 'Spoqa Han Sans', "Source Sans Pro", Apple SD Gothic Neo, 'Open Sans', Dotum, Arial, sans-serif;
 	text-align: center;
 	opacity: 0;
 	transform: translateX(-50%);
@@ -359,7 +359,7 @@ h5 {
 		transform: translateX(-146px);
 	}
 	span {
-		font-family:"Spoqa Han Sans", Apple SD Gothic Neo, sans-serif;
+			font-family: 'Spoqa Han Sans', "Source Sans Pro", Apple SD Gothic Neo, 'Open Sans', Dotum, Arial, sans-serif;
 		position: absolute;
 		padding: 9px 26px 8px;
 		background: #333;
