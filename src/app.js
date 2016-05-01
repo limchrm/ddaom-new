@@ -1,5 +1,7 @@
-var app = angular.module('myApp', ['colorpicker.module']);
+const angular = require('angular');
+require('angular-bootstrap-colorpicker');
 
+const app = window.app = angular.module('myApp', ['colorpicker.module']);
 
 // DATE AND TIME
 app.controller('TimeCtrl', function($scope, $interval) {
@@ -15,7 +17,7 @@ app.controller('TimeCtrl', function($scope, $interval) {
 app.controller('QuoteCtrl', function($scope, $http, $filter) {
 	$scope.quotes = [];
 	$scope.num = Math.floor((Math.random() * 90) + 1);
-	
+
 	$http.get("https://spreadsheets.google.com/feeds/list/1e3oNuL79PBq-xSvpovbppM5j4aUzgzHfkl5c6x1HzAc/od6/public/values?alt=json")
 	.success(function(response) {
 		$scope.quotes = $filter('shuffle')(response.feed.entry);
