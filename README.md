@@ -11,6 +11,13 @@
 - 피드백을 남기시려면 좌측 아래 버튼을 이용해주세요.
 - 모두와 공유하고 싶은 '말'이 있다면, 자유롭게 제보해주세요!
 
+#### 개발하기
+
+```bash
+$ npm install
+$ npm start
+```
+
 #### [크롬 웹스토어에서 설치하기](https://chrome.google.com/webstore/detail/%EB%94%B0%EC%98%B4/jghdlfphhceakekbhfdoohoaoomhgoac)
 
 ### ['말' 제보하기](https://goo.gl/FpI6us)
